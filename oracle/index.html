@@ -13,6 +13,8 @@
         <meta name="description" content="Uteis Marcos">
       
       
+        <link rel="canonical" href="https://anotacoes.disqus.com/oracle/">
+      
       
         <meta name="author" content="Marcos Paulo">
       
@@ -31,22 +33,22 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-\.]+">
       
-      <link rel="shortcut icon" href="/assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.2.3">
     
     
       
-        <title>Lembretes Marcos Paulo</title>
+        <title>Oracle - Lembretes Marcos Paulo</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/application.bcabdff3.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.bcabdff3.css">
       
-        <link rel="stylesheet" href="/assets/stylesheets/application-palette.792431c1.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.792431c1.css">
       
     
     
-      <script src="/assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
       
@@ -96,7 +98,7 @@
                 Lembretes Marcos Paulo
               </span>
               <span class="md-header-nav__topic">
-                
+                Oracle
               </span>
             
           
@@ -149,7 +151,7 @@
         
   <li class="md-tabs__item">
     
-      <a href="/" title="Home" class="md-tabs__link md-tabs__link--active">
+      <a href=".." title="Home" class="md-tabs__link md-tabs__link--active">
         Home
       </a>
     
@@ -187,7 +189,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/" title="Home" class="md-nav__link">
+    <a href=".." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -197,11 +199,49 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="/oracle/" title="Oracle" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Oracle
+      </label>
+    
+    <a href="./" title="Oracle" class="md-nav__link md-nav__link--active">
       Oracle
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#descobrir-tabelas-do-gatec" title="Descobrir tabelas do GATEC" class="md-nav__link">
+    Descobrir tabelas do GATEC
+  </a>
+  
+</li>
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comentários" class="md-nav__link md-nav__link--active">
+            Comentários
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -212,21 +252,70 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#descobrir-tabelas-do-gatec" title="Descobrir tabelas do GATEC" class="md-nav__link">
+    Descobrir tabelas do GATEC
+  </a>
+  
+</li>
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comentários" class="md-nav__link md-nav__link--active">
+            Comentários
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
+                
+                
+                  <h1>Oracle</h1>
+                
+                <h2 id="descobrir-tabelas-do-gatec">Descobrir tabelas do GATEC<a class="headerlink" href="#descobrir-tabelas-do-gatec" title="Permanent link">&para;</a></h2>
+<p>Se logado com usuário <code>gatec_saf</code></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">USER_TABLES</span> <span class="k">WHERE</span> <span class="k">TABLE_NAME</span> <span class="k">LIKE</span> <span class="s1">&#39;%PEDIDO%&#39;</span> 
+</pre></div>
+</td></tr></table>
 
+<p>Se logado com usuário <code>queryti</code></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">ALL_TABLES</span> <span class="k">WHERE</span> <span class="k">TABLE_NAME</span> <span class="k">LIKE</span> <span class="s1">&#39;%PEDIDO%&#39;</span> <span class="k">AND</span> <span class="k">OWNER</span> <span class="o">=</span> <span class="s1">&#39;GATEC_SAF&#39;</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
+                
+                  
+                
+              
               
                 
                   <h2 id="__comments">Comentários</h2>
                   <div id="disqus_thread"></div>
 <script>
   var disqus_config = function () {
-    this.page.url = "";
+    this.page.url = "https://anotacoes.disqus.com/oracle/";
     this.page.identifier =
-      "";
+      "/oracle/";
   };
   (function() {
     var d = document, s = d.createElement("script");
@@ -244,6 +333,27 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Home
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -268,22 +378,22 @@
       
     </div>
     
-      <script src="/assets/javascripts/application.6cdc17f0.js"></script>
+      <script src="../assets/javascripts/application.6cdc17f0.js"></script>
       
         
         
           
-          <script src="/assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
           
             
               
-              <script src="/assets/javascripts/lunr/lunr.pt.js"></script>
+              <script src="../assets/javascripts/lunr/lunr.pt.js"></script>
             
           
           
         
       
-      <script>app.initialize({version:"0.17.2",url:{base:""}})</script>
+      <script>app.initialize({version:"0.17.2",url:{base:".."}})</script>
       
     
     

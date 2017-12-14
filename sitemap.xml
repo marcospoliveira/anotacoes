@@ -3,7 +3,15 @@
 
     
     <url>
-     <loc>/</loc>
+     <loc>https://anotacoes.disqus.com/</loc>
+     <lastmod>2017-12-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://anotacoes.disqus.com/oracle/</loc>
      <lastmod>2017-12-14</lastmod>
      <changefreq>daily</changefreq>
     </url>

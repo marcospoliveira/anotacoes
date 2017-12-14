@@ -2,8 +2,8 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Welcome to MkDocs"
+            "text": "Welcome to MkDocs\n\u00b6\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\u00b6\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\u00b6\n\n\n1\n2\n3\n4\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "title": "Home"
         },
         {
             "location": "/#welcome-to-mkdocs",
@@ -17,8 +17,18 @@
         },
         {
             "location": "/#project-layout",
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "text": "1\n2\n3\n4 mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
             "title": "Project layout"
+        },
+        {
+            "location": "/oracle/",
+            "text": "Descobrir tabelas do GATEC\n\u00b6\n\n\nSe logado com usu\u00e1rio \ngatec_saf\n\n\n1\nSELECT\n \n*\n \nFROM\n \nUSER_TABLES\n \nWHERE\n \nTABLE_NAME\n \nLIKE\n \n'%PEDIDO%'\n \n\n\n\n\n\n\nSe logado com usu\u00e1rio \nqueryti\n\n\n1\nSELECT\n \n*\n \nFROM\n \nALL_TABLES\n \nWHERE\n \nTABLE_NAME\n \nLIKE\n \n'%PEDIDO%'\n \nAND\n \nOWNER\n \n=\n \n'GATEC_SAF'\n;",
+            "title": "Oracle"
+        },
+        {
+            "location": "/oracle/#descobrir-tabelas-do-gatec",
+            "text": "Se logado com usu\u00e1rio  gatec_saf  1 SELECT   *   FROM   USER_TABLES   WHERE   TABLE_NAME   LIKE   '%PEDIDO%'     Se logado com usu\u00e1rio  queryti  1 SELECT   *   FROM   ALL_TABLES   WHERE   TABLE_NAME   LIKE   '%PEDIDO%'   AND   OWNER   =   'GATEC_SAF' ;",
+            "title": "Descobrir tabelas do GATEC"
         }
     ]
 }
