@@ -1,1 +1,57 @@
-site_name: My Docs
+# Informações do Projeto
+site_name: Lembretes Marcos Paulo
+site_description: 'Uteis Marcos'
+site_author: 'Marcos Paulo'
+site_url: 'https://anotacoes.disqus.com'
+
+# Documentos e Temas
+docs_dir: 'docs'
+
+# Copyright
+copyright: '© 2017 Marcos Paulo'
+
+theme:
+  name: 'material'
+  language: 'pt'
+  palette:
+    primary: 'green'
+    accent: 'orange'
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+  logo:
+    icon: 'cloud'
+  feature:
+    tabs: true
+
+# Opções
+extra:
+  disqus: 'mkdocs-material'
+  search:
+    tokenizer: '[\s\-\.]+'
+  
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite(guess_lang=false,linenums=true)
+  - toc(permalink=true)
+  - footnotes
+  - meta
+  - pymdownx.arithmatex
+  - pymdownx.betterem(smart_enable=all)
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tilde
+
+# Paginas
+pages:
+  - 'Home': 'index.md'
+  - 'Oracle': 'oracle.md'
