@@ -22,13 +22,18 @@
         },
         {
             "location": "/oracle/",
-            "text": "Descobrir tabelas do GATEC\n\u00b6\n\n\nSe logado com usu\u00e1rio \ngatec_saf\n\n\n1\nSELECT\n \n*\n \nFROM\n \nUSER_TABLES\n \nWHERE\n \nTABLE_NAME\n \nLIKE\n \n'%PEDIDO%'\n \n\n\n\n\n\n\nSe logado com usu\u00e1rio \nqueryti\n\n\n1\nSELECT\n \n*\n \nFROM\n \nALL_TABLES\n \nWHERE\n \nTABLE_NAME\n \nLIKE\n \n'%PEDIDO%'\n \nAND\n \nOWNER\n \n=\n \n'GATEC_SAF'\n;",
+            "text": "Descobrir tabelas do GATEC\n\u00b6\n\n\nSe logado com usu\u00e1rio \ngatec_saf\n\n\n1\nSELECT\n \n*\n \nFROM\n \nUSER_TABLES\n \nWHERE\n \nTABLE_NAME\n \nLIKE\n \n'%PEDIDO%'\n \n\n\n\n\n\n\nSe logado com usu\u00e1rio \nqueryti\n\n\n1\nSELECT\n \n*\n \nFROM\n \nALL_TABLES\n \nWHERE\n \nTABLE_NAME\n \nLIKE\n \n'%PEDIDO%'\n \nAND\n \nOWNER\n \n=\n \n'GATEC_SAF'\n;\n\n\n\n\n\n\n\nDesbloquear conta do sistema no banco de dados\n\u00b6\n\n\n1\nalter\n \nuser\n \nsapiens\n \naccount\n \nunlock",
             "title": "Oracle"
         },
         {
             "location": "/oracle/#descobrir-tabelas-do-gatec",
             "text": "Se logado com usu\u00e1rio  gatec_saf  1 SELECT   *   FROM   USER_TABLES   WHERE   TABLE_NAME   LIKE   '%PEDIDO%'     Se logado com usu\u00e1rio  queryti  1 SELECT   *   FROM   ALL_TABLES   WHERE   TABLE_NAME   LIKE   '%PEDIDO%'   AND   OWNER   =   'GATEC_SAF' ;",
             "title": "Descobrir tabelas do GATEC"
+        },
+        {
+            "location": "/oracle/#desbloquear-conta-do-sistema-no-banco-de-dados",
+            "text": "1 alter   user   sapiens   account   unlock",
+            "title": "Desbloquear conta do sistema no banco de dados"
         }
     ]
 }

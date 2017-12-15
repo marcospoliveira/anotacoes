@@ -230,6 +230,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#desbloquear-conta-do-sistema-no-banco-de-dados" title="Desbloquear conta do sistema no banco de dados" class="md-nav__link">
+    Desbloquear conta do sistema no banco de dados
+  </a>
+  
+</li>
+      
       
       
         <li class="md-nav__item">
@@ -270,6 +277,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#desbloquear-conta-do-sistema-no-banco-de-dados" title="Desbloquear conta do sistema no banco de dados" class="md-nav__link">
+    Desbloquear conta do sistema no banco de dados
+  </a>
+  
+</li>
+      
       
       
         <li class="md-nav__item">
@@ -301,6 +315,11 @@
 
 <p>Se logado com usuário <code>queryti</code></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">ALL_TABLES</span> <span class="k">WHERE</span> <span class="k">TABLE_NAME</span> <span class="k">LIKE</span> <span class="s1">&#39;%PEDIDO%&#39;</span> <span class="k">AND</span> <span class="k">OWNER</span> <span class="o">=</span> <span class="s1">&#39;GATEC_SAF&#39;</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="desbloquear-conta-do-sistema-no-banco-de-dados">Desbloquear conta do sistema no banco de dados<a class="headerlink" href="#desbloquear-conta-do-sistema-no-banco-de-dados" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">alter</span> <span class="k">user</span> <span class="n">sapiens</span> <span class="n">account</span> <span class="n">unlock</span>
 </pre></div>
 </td></tr></table>
                 
