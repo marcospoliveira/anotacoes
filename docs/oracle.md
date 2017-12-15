@@ -11,3 +11,9 @@ Se logado com usuário `queryti`
 ```SQL
 SELECT * FROM ALL_TABLES WHERE TABLE_NAME LIKE '%PEDIDO%' AND OWNER = 'GATEC_SAF';
 ```
+
+##Desbloquear conta do sistema no banco de dados
+
+```SQL
+alter user sapiens account unlock
+```
