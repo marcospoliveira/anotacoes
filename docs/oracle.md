@@ -14,11 +14,11 @@ SELECT * FROM ALL_TABLES WHERE TABLE_NAME LIKE '%PEDIDO%' AND OWNER = 'GATEC_SAF
 
 ##Desbloquear conta do sistema no banco de dados
 
-#Sistema sapiês
+Sistema sapiês
 ```SQL
 alter user sapiens account unlock
 ```
-#Sistema vetorh
+Sistema vetorh
 ```SQL
 alter user sapiens account unlock
 ```
